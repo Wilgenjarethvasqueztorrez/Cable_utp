@@ -1,0 +1,25 @@
+{
+  "name": "cable_utp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wilgenjarethvasqueztorrez/cable_utp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wilgenjarethvasqueztorrez/cable_utp/issues"
+  },
+  "homepage": "https://github.com/Wilgenjarethvasqueztorrez/cable_utp#readme",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.12.0"
+  }
+}
