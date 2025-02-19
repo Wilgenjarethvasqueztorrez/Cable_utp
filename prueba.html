@@ -136,7 +136,6 @@
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
     <script>
-        // Configuración de Firebase
         var firebaseConfig = {
             apiKey: "AIzaSyAN_BUJI3w3tPLFT6GmYZLcohA2skn64YI",
             authDomain: "base-de-datos-pruebas-a018f.firebaseapp.com",
@@ -146,7 +145,6 @@
             messagingSenderId: "1062700365961",
             appId: "1:1062700365961:web:1dd6d678ca188170742e58"
         };
-        // Inicializar Firebase
         firebase.initializeApp(firebaseConfig);
         var db = firebase.firestore();
 
@@ -191,7 +189,7 @@
             const pruebaNumero = document.getElementById('nuevoPruebaNumero').value;
             const resultado = document.getElementById('nuevoResultado').value;
             await db.collection('prueba-registro').add({
-                id: Math.random().toString(36).substr(2, 9), // Genera un ID aleatorio
+                id: Math.random().toString(36).substr(2, 9), 
                 'prueba-numero': pruebaNumero,
                 resultado: resultado
             });
